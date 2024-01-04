@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task4</title>
+<head>
+    <style>
+        fieldset {
+            border-color: rgb(18, 199, 175);
+            width: 300px;
+            height: 400px;
+            border-radius: 20px;
+            background: aquamarine;
+        }
+        fieldset:hover {
+            border: 3px solid red;
+        }
+        input {
+            border-radius: 7px;
+        }
+        select {
+            border-radius: 8px;
+        }
+        button {
+        height: 40px;
+        width: 200px;
+        border-radius: 10px;
+        background-color: rgb(85, 85, 219);
+        font-size: 20px;
+        font-weight: 900;
+        border: none;
+        outline: none;
+        }
+        button:hover {
+           color: red;
+           border: 3px solid red;
+        }
+    </style>
+    
+</head>
+<body><form action="">
+    <h1><span style="color:purple;"><u>Re</u></span>gistration</h1>
+    <fieldset>
+        <legend><span style="color:gray ;"><h3>Persoal details</h3></span></legend>
+        <label><b>Full name</b></label><BR>
+        <input placeholder="Enter your name"
+        size="30px" 
+        type=""
+        id=""
+        minlength="8"
+        maxlength="20"
+        required
+        ><br>     
+           <div class="one">
+        <br><label><B>Birth date</B></label><br>
+        <input type="date"><br>
+        
+        <br><label><b>Email id</b></label><br>
+        <input type="email"
+        placeholder="Enter your Email id"
+        size="30px"
+        minlength="10"
+        maxlength="25"
+        required ><br>
+    </div>
+        <br><label for=""><b>Phone number</b></label><br>
+        <input type="text"
+        placeholder="Enter your phone number"
+        minlength="10"
+        maxlength="10"
+        required> <br>
+        
+        <br><label for=""><b>Gender</b></label><br>
+        <input type="radio" name="Geder" id=""/> Male
+        <input type="radio" name="Geder" id=""/> Female <br>
+        
+        <br><label for=""><B>Occupation</B></label><br>
+        <select>
+            <option>Private employee</option>
+            <option>Government employee</option>
+            <option>Other</option>
+</select>
+</fieldset><br>
+<fieldset>
+    <legend><h3><span style="color: gray;"> Identity Details</span></h3></legend>
+    <label for=""><b>ID type</b></label><br>
+    <select name="" id="">
+        <option>Adhar card</option>
+        <option>Pan card</option>
+        <option>Election card</option>
+    </select><br>
+
+    <br><label for=""><b>ID number</b></label><br>
+    <input type="text"
+    placeholder="Enter id number"
+    minlength="5"
+    maxlength="14"
+    ><br>
+    <br><label for=""><b>Issuing authority</b></label><br>
+    <input type="text"
+    placeholder="Enter Issuing authority"><br>
+    <br><label for=""><b>State of company</b></label><br>
+    <select name="" id="">
+        <option>Gujrat</option>
+        <option>Maharastra</option>
+        <option>Karnataka</option>
+    </select><br>
+    <br><label><B>Issue Date</B></label><br>
+        <input type="date"><br>
+        <br><label><B>Expiry date</B></label><br>
+        <input type="date"><br>
+</fieldset>
+ <br>
+ <button>Next</button>
+</form>
+    
+
+    
+</body>
+</html>

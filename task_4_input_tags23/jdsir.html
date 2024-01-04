@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="collectData.php" method="post">
+      <fieldset>
+        <legend>User information</legend>
+        <label for="username"></label>
+        <input
+          type="text"
+          name=""
+          id="username"
+          placeholder="Enter Username"
+          minlength="3"
+          maxlength="16"
+          required
+        />
+        <br />
+        <label for="email"></label>
+        <input
+          type="email"
+          name=""
+          id="email"
+          placeholder="Enter Email"
+          minlength="3"
+          maxlength="16"
+          required
+        />
+      </fieldset>
+      <br />
+      <label for="marks"></label>
+      <input
+        type="number"
+        name=""
+        id="marks"
+        placeholder="Enter Marks"
+        required
+        min="30"
+        max="999"
+      />
+      <br />
+      <label for="password"></label>
+      <input
+        type="password"
+        name=""
+        id="password"
+        placeholder="Enter Password"
+        required
+        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
+      />
+      <br />
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
+
+<!-- pattern for password  -->
+<!-- ^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$ -->
+
+<!-- pattern for email  -->
+<!-- [A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$ -->
