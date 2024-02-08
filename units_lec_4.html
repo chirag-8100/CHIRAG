@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      .box1 {
+        /* height: 100vh; */
+        height: 100vmax;
+        /* height: 75vh; */
+        border: 3px solid red;
+        margin-bottom: 50px;
+        background-color: aquamarine;
+      }
+      .child {
+        /* width: 75vw; */
+        width: 75%;
+        height: 50%;
+        border: 3px solid aqua;
+      }
+      video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+      .box2 {
+        height: 100px;
+        width: 100vw;
+        background-color: brown;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box1">
+      <video
+        src="../Module 2/184972 (540p).mp4"
+        muted
+        autoplay
+        controls
+      ></video>
+    </div   >
+    <div class="box1"><div class="child"></div></div>
+    <div class="box2">Box2</div>
+  </body>
+</html>
